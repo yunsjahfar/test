@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K24KurdishLight-Light';
+    list-style-type: none;
+    text-decoration: none !important;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+.btn:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+}
+
+ ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #155f63, #52929ccd);
+}
+
+section {
+    padding: 50px 0px;
+}
+
+input:focus,
+input:active {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: none !important;
+}
+
+
+/* start navbar */
+
+.header .navbarbgcolor {
+    background-color: #053F42;
+    transition: .4s ease-in-out;
+}
+
+.header .navbar {
+    direction: rtl;
+}
+
+.header .navbar-brand {
+    font-size: 28px;
+}
+
+.header .navbar .fa-bars {
+    color: #fff;
+    font-size: 28px;
+}
+
+.header .navbar li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.header .navbar-toggler {
+    border: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-box input[type="text"] {
+    border-radius: 3px 0px 0px 3px;
+    border: 1px 0px 0px 1px solid #053F42;
+}
+
+.search-box .search-btn {
+    width: 40px;
+    height: 38px;
+    color: white;
+    background-color: #053F42;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+}
+
+
+/* end navbar */
+
+
+/*start.landing*/
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../card5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* end landing */
+
+
+/*start.about*/
+
+.about img {
+    width: 500px;
+    height: 350px;
+}
+
+
+/*end.about*/
+
+
+/*rangy dropdawn listy ktebakan*/
+
+.dropdown-menu {
+    background-color: #243a3b;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2b2929;
+}
+
+
+/* start contact section*/
+
+.contact .btn {
+    background-color: #053F42;
+    outline: none;
+    border: none;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus {
+    border-color: #053F42 !important;
+    outline-color: none !important;
+    box-shadow: none !important;
+}
+
+
+/* end contact section*/
+
+label {
+    text-align: right;
+}
+
+
+/* start footer section*/
+
+.footer {
+    width: 100%;
+    background-color: #053F42;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+/* end footer section*/
+
+
+/* start froshtn section*/
+
+.froshtn form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #053F42;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* end froshtn section*/
+
+
+/* start sales section */
+
+.sales .card-text {
+    line-height: 25px;
+}
+
+.sales .card img {
+    height: 300px;
+}
+
+
+/* end sales section */
+
+@media screen and (max-width:576px) {
+    .sales .col-lg-4.col-md-6.col-sm-12,
+    .about .about-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .about img {
+        max-width: 290px;
+    }
+    .contact .row {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        text-align: right !important;
+    }
+    .sales .col-lg-4.col-md-6.col-sm-12 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer p,
+    .footer a {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .footer .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sales .sales-row {
+        display: flex;
+        justify-content: end;
+    }
+    .navbar-nav {
+        text-align: right !important;
+    }
+}
